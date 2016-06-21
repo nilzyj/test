@@ -1,0 +1,3 @@
+ftp://ykbsb2.yk.psu.edu/pub/alien/alien-extra.rpm
+
+ yum install perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker 

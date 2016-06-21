@@ -1,0 +1,86 @@
+char a[10];
+char *p;
+p=a;
+
+int a[10];
+int a[]={1,2,3};
+
+char a[10][20];
+char a[][20]={"we","32"};
+
+char a[10]={'a','c','\0'};
+char a[10]={"adsf"};
+
+int a=1;
+auto int a=1;
+
+#include<stdio.h>
+#define M 10
+
+int a=1;
+
+int test()
+{
+	extern int b;
+}
+
+int fun()
+{
+	extern int b;//extern可以多次说明，说明从此处开始一直到程序结束是此变量的作用域，全局变量说明
+	b=3;
+}
+
+int b=2;//全局变量只可以定义一次，全局变量定义
+
+main()
+{
+	
+	a=2;
+	M;
+	
+	b=3;
+}
+
+
+
+#include<stdio.h>
+
+int c=0;
+
+main()
+{
+	extern int b;
+}
+
+
+
+extern int fun()//用extern说明函数
+
+int extern fun()//用extern说明函数
+
+
+#include<stdio.h>
+
+int fun(){}//定义一个函数
+
+main(){}
+
+#include<stdio.h>
+
+extern int fun();//该说明能调用函数fun()
+
+main()
+
+
+//静态函数只能在一个源代码中调用，其他代码不能调用。
+#include<stdio.h>
+
+static int fun(){}//定义一个静态函数
+
+main(){}
+
+#include<stdio.h>
+
+extern int fun();//该说明不能调用静态函数fun()
+
+main()

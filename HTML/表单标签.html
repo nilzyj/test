@@ -1,0 +1,29 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+        <title>title</title>
+    </head>
+    <body>
+        <form class="" action="index.html" method="post">
+            <input type="button" name="button" value="按钮">
+            <input type="text" name="text" value=""><br>
+            <input type="radio" name="radio" value="1" checked="checked">1
+            <input type="radio" name="radio" value="2">2<br>
+            <input type="checkbox" name="name" value="3">c1
+            <input type="checkbox" name="name" value="4">c2
+            <input type="checkbox" name="name" value="5">c3<br>
+            <input type="reset" name="name" value="clear">
+            <input type="submit" name="name" value="submit"><br>
+            <input type="file" name="name" value=""><br>
+            <input type="image" name="name" value="" src="img.jpg"><br>
+            <!-- 隐藏组件 -->
+            <input type="hidden"><br>
+            <textarea name="text" rows="8" cols="40"></textarea><br>
+            <select class="" name="">
+                <option>a</option>
+                <option>b</option>
+            </select>
+            <!-- 如果将中文提交到tomcat服务器，服务器会默认用iso8859-1进行解码，会出现乱码， 1。通过iso885901进行编码 2.通过服务端的request对象的setCharacterEncoding方法-->
+        </form>
+    </body>
+</html>

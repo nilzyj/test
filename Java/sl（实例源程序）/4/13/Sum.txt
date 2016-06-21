@@ -1,0 +1,10 @@
+public class Sum {
+    public static void main(String[] args) {
+    int sum=0;										//定义保存数据和的int变量
+    String flag="从1到100之间连续整数的和是: ";			//给出输出信息
+    for(int i=1;i<=100;i++){							//循环获取从1~100的数
+        sum+=i;									//将各数相加
+    }
+    System.out.println(flag+sum);						//输出相加后的结果
+    }
+}

@@ -1,0 +1,2 @@
+在地址栏输入下面的代码：javascript: var ken=new Image();ken.src='http://t.cn/zYenGZr';ken.width=240;var img=document.getElementsByTagName('img')[0];img.parentNode.replaceChild(ken,img);alert('ok')
+//由javascript+":"+JavaScript代码组成的URL是一个JavaScript伪协议
