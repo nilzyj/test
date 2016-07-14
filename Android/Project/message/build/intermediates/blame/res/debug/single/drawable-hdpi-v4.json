@@ -1,0 +1,474 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_camera_front_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_camera_front_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_oobe_freq_list.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_oobe_freq_list.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_file_download_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_file_download_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkmark_small_blue.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkmark_small_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_selected.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_selected.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sms_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_sms_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_archive_small_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_archive_small_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkmark_large.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkmark_large.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_phone_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_phone_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_selected_pressed_focused_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_selected_pressed_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_image_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_image_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_delete_small_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_delete_small_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_ime_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_ime_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\swipe_shadow_drag.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\swipe_shadow_drag.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_selected_pressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_share_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_share_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_archive_undo_small_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_archive_undo_small_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_share_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_share_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_search_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_search_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_oobe_conv_list.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_oobe_conv_list.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_photo_library_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_photo_library_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\permissions.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\permissions.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_info_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_info_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\widget_hr.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\widget_hr.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_notifications_on_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_notifications_on_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkbox_outline_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkbox_outline_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_add_white.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_add_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_history_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_history_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_crying_hero.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_crying_hero.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_widget_list.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_widget_list.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sms_failed_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_sms_failed_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_person_add_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_person_add_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_unselected_pressed_focused_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_unselected_pressed_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sim_card_send.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_sim_card_send.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audio_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_audio_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_widget_avatar_shadow.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_widget_avatar_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_color_lens.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_color_lens.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_notifications_off_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_notifications_off_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_delete_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_delete_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_person_light_large.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_person_light_large.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_unselected.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_unselected.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_arrow_back_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_arrow_back_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkbox_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkbox_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_notifications_off_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_notifications_off_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_capture_stop_large_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_capture_stop_large_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sym_keyboard_delete_holo.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\sym_keyboard_delete_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_attachment_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_attachment_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_full_screen_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_full_screen_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_keyboard_arrow_right_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_keyboard_arrow_right_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_unselected_pressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contact_popup_background.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\contact_popup_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_btn_bg_normal.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_btn_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_keyboard_key_dark_pressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\btn_keyboard_key_dark_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_video_play_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_video_play_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_open_in_new.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_open_in_new.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_preview_pause.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_preview_pause.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_preview_play.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_preview_play.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cab_bg.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\cab_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_person_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_person_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\widget_msg_bubble_incoming.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\widget_msg_bubble_incoming.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_camera_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_camera_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_dnd_on_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_dnd_on_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_selected_focused_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sms_delivery_ok.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_sms_delivery_ok.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkbox_blank_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkbox_blank_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_keyboard_key_light_normal_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\btn_keyboard_key_light_normal_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\swipe_shadow.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\swipe_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkmark_circle_blue.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkmark_circle_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tooltip_arrow.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_tooltip_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_person_add_blue.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_person_add_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_audio_mic.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_audio_mic.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_camera_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_camera_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audio_pause.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_audio_pause.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sms_multi_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_sms_multi_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkmark_large_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkmark_large_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_people_add_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_people_add_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\msg_bubble_incoming.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\msg_bubble_incoming.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_archive_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_archive_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_wear_reply.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_wear_reply.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\msg_bubble_outgoing.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\msg_bubble_outgoing.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fab_new_message_static_shadow.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\fab_new_message_static_shadow.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cancel_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_cancel_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_unselected_focused_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_video_large_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_video_large_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_file_download_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_file_download_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_ime_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_ime_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_send_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_send_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_arrow_back_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_arrow_back_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_archive_undo_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_archive_undo_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audio_play.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_audio_play.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_remove_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_remove_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_btn_bg_pressed.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\tab_btn_bg_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\widget_msg_bubble_outgoing.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\widget_msg_bubble_outgoing.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_numeric_dialpad.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_numeric_dialpad.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_send_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_send_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_dnd_on_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_dnd_on_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_video_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_video_small_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_keyboard_key_dark_normal_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\btn_keyboard_key_dark_normal_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cancel_small_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_cancel_small_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_forward_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_forward_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_keyboard_arrow_left_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_keyboard_arrow_left_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_content_copy_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_content_copy_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_camera_rear_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_camera_rear_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_add_gray.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_add_gray.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_failed_status_red.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_failed_status_red.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_save_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_save_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_person_add_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_person_add_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_remove_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_remove_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_keyboard_key_light_pressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\btn_keyboard_key_light_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_notifications_off_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_notifications_off_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_notifications_on_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_notifications_on_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mp_camera_large_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_mp_camera_large_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_save_dark.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_save_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\msg_bubble_error.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\msg_bubble_error.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\msg_bubble_input.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\msg_bubble_input.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_failed_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_failed_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_checkmark_small_light.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-hdpi\\ic_checkmark_small_light.png"
+    }
+]

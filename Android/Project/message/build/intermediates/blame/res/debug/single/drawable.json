@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\message_bubble_incoming_no_arrow.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\message_bubble_incoming_no_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\compose_chips_divider_gradient.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\compose_chips_divider_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\contact_picker_tab_background_selector.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\contact_picker_tab_background_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\attachment_image_placeholder_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\attachment_image_placeholder_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_btn_bg.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\tab_btn_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\chips_dropdown_text_color.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\chips_dropdown_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\fastscroll_thumb.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\fastscroll_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\contacts_fastscroll_label_left.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\contacts_fastscroll_label_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\attachment_audio_preview_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\attachment_audio_preview_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\fastscroll_preview_left.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\fastscroll_preview_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\chips_dropdown_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\chips_dropdown_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\widget_bottom_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\widget_bottom_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_new_message_bg.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\fab_new_message_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\default_image.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\default_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\subject_editor_bubble.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\subject_editor_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\contacts_fastscroll_label_right.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\contacts_fastscroll_label_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\exit_button_bg.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\exit_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\send_arrow_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\send_arrow_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\gallery_checkbox_selector.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\gallery_checkbox_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\audio_progress_bar_background_incoming.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\audio_progress_bar_background_incoming.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\generic_video_icon.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\generic_video_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\widget_top_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\widget_top_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\gallery_image_background_selector.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\gallery_image_background_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\gallery_document_picker_item_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\gallery_document_picker_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\audio_record_control_button_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\audio_record_control_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_indicator.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\tab_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\message_bubble_outgoing_no_arrow.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\message_bubble_outgoing_no_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\stat_notify_chat.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\stat_notify_chat.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\fastscroll_track.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\fastscroll_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\mediapicker_tab_button_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\mediapicker_tab_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\attachment_vcard_preview_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\attachment_vcard_preview_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\fastscroll_thumb_pressed.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\fastscroll_thumb_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\attachment_more_items_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\attachment_more_items_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\fastscroll_preview_right.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\fastscroll_preview_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\transparent_button_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\transparent_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\conversation_compose_divider_gradient.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\conversation_compose_divider_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\audio_progress_bar_progress.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\audio_progress_bar_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\sim_selector_background_gradient.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\sim_selector_background_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable\\audio_progress_bar_background_outgoing.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable\\audio_progress_bar_background_outgoing.xml"
+    }
+]

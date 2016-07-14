@@ -1,0 +1,178 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Android.mk
+* ForceProguard.mk
+* Messaging.iml
+* build\
+* build\README
+* build\android_lint.mk
+* build\android_lint.xslt
+* build\colorize_errors.py
+* build\gcheckstyle.mk
+* build\gcheckstyle\
+* build\gcheckstyle\google-style-checker_deploy.jar
+* build\gcheckstyle\tools\
+* build\gcheckstyle\tools\java\
+* build\gcheckstyle\tools\java\checkstyle\
+* build\gcheckstyle\tools\java\checkstyle\googlestyle-5.0.xml
+* build\process_style_output.py
+* proguard-release.flags
+* proguard-test.flags
+* proguard.flags
+* tests\
+* tests\.classpath
+* tests\.project
+* tests\.settings\
+* tests\.settings\org.eclipse.jdt.core.prefs
+* tests\Android.mk
+* tests\bin\
+* tests\bin\AndroidManifest.xml
+* tests\bin\classes\
+* tests\bin\classes\com\
+* tests\bin\classes\com\android\
+* tests\bin\classes\com\android\messaging\
+* tests\bin\classes\com\android\messaging\BugleTestCase.class
+* tests\bin\classes\com\android\messaging\FakeContentProvider$ContentOverride.class
+* tests\bin\classes\com\android\messaging\FakeContentProvider.class
+* tests\bin\classes\com\android\messaging\FakeContext$FakeContextHost.class
+* tests\bin\classes\com\android\messaging\FakeContext.class
+* tests\bin\classes\com\android\messaging\FakeFactory.class
+* tests\bin\classes\com\android\messaging\TestUtil.class
+* tests\bin\classes\com\android\messaging\datamodel\
+* tests\bin\classes\com\android\messaging\datamodel\BindingTest$TestBindableData.class
+* tests\bin\classes\com\android\messaging\datamodel\BindingTest.class
+* tests\bin\classes\com\android\messaging\datamodel\BitmapPoolTest.class
+* tests\bin\classes\com\android\messaging\datamodel\BugleServiceTestCase.class
+* tests\bin\classes\com\android\messaging\datamodel\ConversationListTest.class
+* tests\bin\classes\com\android\messaging\datamodel\DataModelTest.class
+* tests\bin\classes\com\android\messaging\datamodel\FakeCursor.class
+* tests\bin\classes\com\android\messaging\datamodel\FakeDataModel.class
+* tests\bin\classes\com\android\messaging\datamodel\FrequentContactsCursorBuilderTest.class
+* tests\bin\classes\com\android\messaging\datamodel\MemoryCacheManagerTest.class
+* tests\bin\classes\com\android\messaging\datamodel\ParticipantRefreshTest.class
+* tests\bin\classes\com\android\messaging\datamodel\action\
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceSystemTest$TestChatAction.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceSystemTest$TestChatActionMonitor.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceSystemTest$TestChatActionOther.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceSystemTest.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceTest$TestChatAction.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceTest$TestChatActionMonitor.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionServiceTest.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTest$TestChatAction.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTest.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$ResultTracker.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubActionService$StubActionServiceCallLog.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubActionService.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubBackgroundWorker.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubChatActionMonitor$StateTransition.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubChatActionMonitor.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubConnectivityUtil.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers$StubLoader.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ActionTestHelpers.class
+* tests\bin\classes\com\android\messaging\datamodel\action\GetOrCreateConversationActionTest.class
+* tests\bin\classes\com\android\messaging\datamodel\action\ReadWriteDraftMessageActionTest.class
+* tests\bin\classes\com\android\messaging\datamodel\data\
+* tests\bin\classes\com\android\messaging\datamodel\data\ConversationMessageDataTest.class
+* tests\bin\classes\com\android\messaging\datamodel\data\ConversationParticipantsDataTest.class
+* tests\bin\classes\com\android\messaging\datamodel\data\TestDataFactory.class
+* tests\bin\classes\com\android\messaging\datamodel\media\
+* tests\bin\classes\com\android\messaging\datamodel\media\FakeImageRequest.class
+* tests\bin\classes\com\android\messaging\datamodel\media\FakeImageResource.class
+* tests\bin\classes\com\android\messaging\datamodel\media\FakeMediaCacheManager.class
+* tests\bin\classes\com\android\messaging\datamodel\media\ImageRequestTest.class
+* tests\bin\classes\com\android\messaging\datamodel\media\MediaResourceManagerTest.class
+* tests\bin\classes\com\android\messaging\test\
+* tests\bin\classes\com\android\messaging\test\BuildConfig.class
+* tests\bin\classes\com\android\messaging\test\R.class
+* tests\bin\classes\com\android\messaging\ui\
+* tests\bin\classes\com\android\messaging\ui\ActivityInstrumentationTestCaseIntent.class
+* tests\bin\classes\com\android\messaging\ui\BugleActivityInstrumentationTestCase.class
+* tests\bin\classes\com\android\messaging\ui\BugleActivityTest.class
+* tests\bin\classes\com\android\messaging\ui\BugleActivityUnitTestCase.class
+* tests\bin\classes\com\android\messaging\ui\CustomHeaderViewPagerTest.class
+* tests\bin\classes\com\android\messaging\ui\FakeListViewHolder.class
+* tests\bin\classes\com\android\messaging\ui\FragmentTestCase.class
+* tests\bin\classes\com\android\messaging\ui\MultiAttachmentLayoutTest.class
+* tests\bin\classes\com\android\messaging\ui\ViewTest.class
+* tests\bin\classes\com\android\messaging\ui\attachmentchooser\
+* tests\bin\classes\com\android\messaging\ui\attachmentchooser\AttachmentChooserFragmentTest$IsSetOfGivenAttachments.class
+* tests\bin\classes\com\android\messaging\ui\attachmentchooser\AttachmentChooserFragmentTest.class
+* tests\bin\classes\com\android\messaging\ui\contact\
+* tests\bin\classes\com\android\messaging\ui\contact\ContactListItemViewTest.class
+* tests\bin\classes\com\android\messaging\ui\contact\ContactPickerFragmentTest.class
+* tests\bin\classes\com\android\messaging\ui\conversation\
+* tests\bin\classes\com\android\messaging\ui\conversation\ComposeMessageViewTest.class
+* tests\bin\classes\com\android\messaging\ui\conversation\ConversationActivityUiStateTest.class
+* tests\bin\classes\com\android\messaging\ui\conversation\ConversationFragmentTest.class
+* tests\bin\classes\com\android\messaging\ui\conversation\ConversationInputManagerTest.class
+* tests\bin\classes\com\android\messaging\ui\conversation\ConversationMessageViewTest.class
+* tests\bin\classes\com\android\messaging\ui\conversationlist\
+* tests\bin\classes\com\android\messaging\ui\conversationlist\ConversationListFragmentTest.class
+* tests\bin\classes\com\android\messaging\ui\conversationlist\ConversationListItemViewTest.class
+* tests\bin\classes\com\android\messaging\ui\mediapicker\
+* tests\bin\classes\com\android\messaging\ui\mediapicker\AudioRecordViewTest.class
+* tests\bin\classes\com\android\messaging\ui\mediapicker\CameraManagerTest.class
+* tests\bin\classes\com\android\messaging\ui\mediapicker\GalleryGridItemViewTest.class
+* tests\bin\classes\com\android\messaging\ui\mediapicker\MediaPickerTest.class
+* tests\bin\classes\com\android\messaging\ui\mediapicker\MockCameraFactory.class
+* tests\bin\classes\com\android\messaging\util\
+* tests\bin\classes\com\android\messaging\util\BugleGservicesTest.class
+* tests\bin\classes\com\android\messaging\util\ContactUtilTest.class
+* tests\bin\classes\com\android\messaging\util\FakeBugleGservices.class
+* tests\bin\classes\com\android\messaging\util\FakeBuglePrefs.class
+* tests\bin\classes\com\android\messaging\util\FakeMediaUtil.class
+* tests\bin\classes\com\android\messaging\util\YouTubeUtilTest.class
+* tests\gen\
+* tests\gen\com\
+* tests\gen\com\android\
+* tests\gen\com\android\messaging\
+* tests\gen\com\android\messaging\test\
+* tests\gen\com\android\messaging\test\BuildConfig.java
+* tests\gen\com\android\messaging\test\Manifest.java
+* tests\gen\com\android\messaging\test\R.java
+* tests\project.properties
+* tests\tests.iml
+* tools\
+* tools\buglesql
+* tools\dumpapkversion.sh
+* tools\messagegen\
+* tools\messagegen\fillsms
+* tools\messagegen\listimages
+* tools\mmssql
+* version.mk
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => message\src\main\AndroidManifest.xml
+* assets\ => message\src\main\assets\
+* jni\ => message\src\main\jni\
+* res\ => message\src\main\res\
+* src\ => message\src\main\java\
+* src\com\android\messaging\ui\mediapicker\camerafocus\README.txt => message\src\main\resources\com\android\messaging\ui\mediapicker\camerafocus\README.txt
+* tests\res\ => message\src\androidTest\res
+* tests\src\ => message\src\androidTest\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

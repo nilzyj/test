@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\audio_end.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\audio_end.wav"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\db_op_debug.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\db_op_debug.wav"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\server_request_debug.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\server_request_debug.wav"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\message_inc_thread.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\message_inc_thread.wav"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\message_failure.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\message_failure.wav"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\message_sent.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\message_sent.wav"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\raw\\audio_initiate.wav",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\raw\\audio_initiate.wav"
+    }
+]

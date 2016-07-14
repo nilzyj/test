@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\contact_picker_tab_background_selector.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-v21\\contact_picker_tab_background_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\transparent_button_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-v21\\transparent_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\gallery_image_background_selector.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-v21\\gallery_image_background_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\fab_new_message_bg.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-v21\\fab_new_message_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\mediapicker_tab_button_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-v21\\mediapicker_tab_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\widget_item_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\Project\\message\\src\\main\\res\\drawable-v21\\widget_item_background.xml"
+    }
+]
