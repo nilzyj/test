@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1418438422 source:g:\学习\代码\数据结构\希尔排序\main.cpp
+	<dos.h>
+	<conio.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
