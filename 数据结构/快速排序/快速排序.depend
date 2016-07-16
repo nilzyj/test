@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1418388211 source:g:\学习\代码\数据结构\快速排序\main.cpp
-	<dos.h>
-	<conio.h>
-	<math.h>
-	<stdio.h>
-	<stdlib.h>
-
