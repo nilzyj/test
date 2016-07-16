@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1419315978 source:g:\娱乐\学习\代码\c\文件操作\main.cpp
-	<iostream>
-	<stdlib.h>
-	<string.h>
-	<fstream>
-

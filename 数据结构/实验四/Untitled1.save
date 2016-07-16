@@ -1,9 +1,0 @@
-#define INFINITY 30000    //定义一个权值的最大值
-#define MAX_VERTEX_NUM 20 //图的最大顶点数
-
-Graph
-arcs[MAX_VERTEX_NUM][MAX_VERTEX_NUM]; //邻接矩阵
-vexnum,arcnum;                //图的当前顶点和边数
-
-P[MAX_VERTEX_NUM][MAX_VERTEX_NUM]; //存放从源点到各顶点的最短路径
-D[MAX_VERTEX_NUM];                 //存放从源点到各顶点的最短路径的距离
