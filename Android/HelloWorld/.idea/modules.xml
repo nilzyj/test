@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activity/activity.iml" filepath="$PROJECT_DIR$/activity/activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animation/animation.iml" filepath="$PROJECT_DIR$/animation/animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autocompletetextview/autocompletetextview.iml" filepath="$PROJECT_DIR$/autocompletetextview/autocompletetextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkbox/checkbox.iml" filepath="$PROJECT_DIR$/checkbox/checkbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragment/fragment.iml" filepath="$PROJECT_DIR$/fragment/fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framelayout/framelayout.iml" filepath="$PROJECT_DIR$/framelayout/framelayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intent/intent.iml" filepath="$PROJECT_DIR$/intent/intent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lineview/lineview.iml" filepath="$PROJECT_DIR$/lineview/lineview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listview1/listview1.iml" filepath="$PROJECT_DIR$/listview1/listview1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listview2/listview2.iml" filepath="$PROJECT_DIR$/listview2/listview2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marqueetextview/marqueetextview.iml" filepath="$PROJECT_DIR$/marqueetextview/marqueetextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiautocompletetextview/multiautocompletetextview.iml" filepath="$PROJECT_DIR$/multiautocompletetextview/multiautocompletetextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/radio/radio.iml" filepath="$PROJECT_DIR$/radio/radio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharedperference/sharedperference.iml" filepath="$PROJECT_DIR$/sharedperference/sharedperference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/theaddemo/theaddemo.iml" filepath="$PROJECT_DIR$/theaddemo/theaddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread_hand/thread_hand.iml" filepath="$PROJECT_DIR$/thread_hand/thread_hand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/togglebutton/togglebutton.iml" filepath="$PROJECT_DIR$/togglebutton/togglebutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/view/view.iml" filepath="$PROJECT_DIR$/view/view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager/viewpager.iml" filepath="$PROJECT_DIR$/viewpager/viewpager.iml" />
+    </modules>
+  </component>
+</project>
