@@ -6,14 +6,10 @@
               android:orientation="vertical"
               tools:context="com.bbk.zyj.myapplication.MainActivity"
               tools:deviceIds="wear_square">
-    <ListView
-        android:id="@+id/lv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
 
-    <Button
-        android:id="@+id/btn"
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"></ListView>
+
 </LinearLayout>
