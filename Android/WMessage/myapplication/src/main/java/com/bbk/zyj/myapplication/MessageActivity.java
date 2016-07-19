@@ -46,8 +46,10 @@ public class MessageActivity extends Activity {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         if (CONTECT_STATE) {
+                            //有消息记录
                             changeActivity(MessageSend.class, i);
                         } else {
+                            //无消息记录
                             changeActivity(Binding.class);
                         }
 
@@ -57,13 +59,14 @@ public class MessageActivity extends Activity {
         });
     }
 
-    //
+    //有消息记录
     public void changeActivity(Class<?> cls, int i) {
         Intent intent = new Intent(MessageActivity.this, cls);
         intent.putExtra("name", mMessages.get(i).getName());
+        intent.putExtra("content", mMessages.get(i).getContent());
         startActivity(intent);
     }
-
+    //无消息记录
     public void changeActivity(Class<?> cls) {
         Intent intent = new Intent(MessageActivity.this, cls);
         startActivity(intent);

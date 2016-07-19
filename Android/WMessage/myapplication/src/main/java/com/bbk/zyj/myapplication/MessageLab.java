@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2016/7/18.
  */
-public class MessageLab {private  static final boolean CONTECT_STATE = true;
+public class MessageLab {
 
     private static MessageLab sMessageLab;
 
