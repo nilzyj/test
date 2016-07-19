@@ -3,10 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!--填充色-->
-    <solid
-        android:color="#ffffff"
-        />
-    <!--圆角&ndash-->
+    <solid android:color="#ffffff" />
+    <!--圆角-->
     <corners android:radius="5dp"/>
     <!--渐变-->
     <!--<gradient-->
