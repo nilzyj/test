@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Administrator\AndroidStudioProjects\Project\message\src\main\assets"><file name="licenses.html" path="C:\Users\Administrator\AndroidStudioProjects\Project\message\src\main\assets\licenses.html"/></source><source path="C:\Users\Administrator\AndroidStudioProjects\Project\message\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\Administrator\AndroidStudioProjects\Project\message\src\debug\assets"/></dataSet></merger>
