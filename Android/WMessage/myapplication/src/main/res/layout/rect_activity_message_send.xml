@@ -36,4 +36,12 @@
         android:layout_marginLeft="65dp"
         android:paddingTop="8dp"
         android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/lv_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+    </ListView>
 </RelativeLayout>

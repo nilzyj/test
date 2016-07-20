@@ -7,4 +7,5 @@
     <string name="title_activity_message_send">message_send</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
+    <string name="send">发送</string>
 </resources>
