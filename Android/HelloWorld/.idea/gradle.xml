@@ -3,9 +3,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.10" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -21,6 +20,8 @@
             <option value="$PROJECT_DIR$/lineview" />
             <option value="$PROJECT_DIR$/listview1" />
             <option value="$PROJECT_DIR$/listview2" />
+            <option value="$PROJECT_DIR$/listview3" />
+            <option value="$PROJECT_DIR$/listview4" />
             <option value="$PROJECT_DIR$/marqueetextview" />
             <option value="$PROJECT_DIR$/multiautocompletetextview" />
             <option value="$PROJECT_DIR$/radio" />
@@ -47,6 +48,8 @@
             <option value="$PROJECT_DIR$/lineview" />
             <option value="$PROJECT_DIR$/listview1" />
             <option value="$PROJECT_DIR$/listview2" />
+            <option value="$PROJECT_DIR$/listview3" />
+            <option value="$PROJECT_DIR$/listview4" />
             <option value="$PROJECT_DIR$/marqueetextview" />
             <option value="$PROJECT_DIR$/multiautocompletetextview" />
             <option value="$PROJECT_DIR$/radio" />
