@@ -55,6 +55,13 @@ public class MessageActivity extends Activity {
 
                     }
                 });
+                mListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                    @Override
+                    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                        Toast.makeText(MessageActivity.this, "LongClick", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
             }
         });
     }

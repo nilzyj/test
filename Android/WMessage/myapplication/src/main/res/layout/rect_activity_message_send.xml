@@ -40,8 +40,6 @@
     <ListView
         android:id="@+id/lv_send_message"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true">
-
+        android:layout_height="wrap_content">
     </ListView>
 </RelativeLayout>
