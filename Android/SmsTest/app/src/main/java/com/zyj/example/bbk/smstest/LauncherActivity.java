@@ -37,7 +37,8 @@ public class LauncherActivity extends ListActivity {
         setListAdapter(new SimpleAdapter(this, getData(path),
                 android.R.layout.simple_list_item_1, new String[] { "title" },
                 new int[] { android.R.id.text1 }));
-        //Get the activity's list view widget.获取活动列表视图控件
+        //getListView():Get the activity's list view widget.获取活动列表视图控件
+        //setTextFilterEnabled:Enables or disables the type filter window.启用或禁用类型过滤器窗口
         getListView().setTextFilterEnabled(true);
         
     }

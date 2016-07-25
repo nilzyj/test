@@ -39,11 +39,13 @@ public class MessageSend extends Activity {
                 tvNoMessage = (TextView) stub.findViewById(R.id.tv_no_message);
                 lvSendMessage = (ListView) stub.findViewById(R.id.lv_send_message);
 
-                final Intent intent = getIntent();
-                String name = intent.getStringExtra("name");
+                Bundle bundle = getIntent().getExtras();
+                String name = bundle.getString("name");
+                String num = bundle.getString("num");
+                String content = bundle.getString("content");
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(MessageSend.this
-                        , android.R.layout.simple_list_item_1, new String[] {"1", "2"});
+                        , android.R.layout.simple_list_item_1, new String[] {content});
                 lvSendMessage.setAdapter(adapter);
 
                 btnSendMessage = (Button) findViewById(R.id.btn_send_message);

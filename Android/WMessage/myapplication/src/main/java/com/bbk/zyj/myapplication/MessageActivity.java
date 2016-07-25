@@ -3,6 +3,7 @@ package com.bbk.zyj.myapplication;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bbk.zyj.myapplication.database.MessageBaseHelper;
 
 import java.util.List;
 
@@ -37,7 +40,12 @@ public class MessageActivity extends Activity {
                 //mContentTextView = (TextView) stub.findViewById(R.id.tv_content);
                 mListView = (ListView) stub.findViewById(R.id.listview);
 
-                mMessages = MessageLab.get(MessageActivity.this).getMessages();
+                MessageBaseHelper database = new MessageBaseHelper(MessageActivity.this);
+                final SQLiteDatabase db = database.getWritableDatabase();
+
+                mMessages = MessageLab.get(MessageActivity.this, db).getMessages();
+
+                db.close();
 
                 MyAdapter adapter = new MyAdapter(mMessages, MessageActivity.this);
                 mListView.setAdapter(adapter);
@@ -69,8 +77,11 @@ public class MessageActivity extends Activity {
     //有消息记录
     public void changeActivity(Class<?> cls, int i) {
         Intent intent = new Intent(MessageActivity.this, cls);
-        intent.putExtra("name", mMessages.get(i).getName());
-        intent.putExtra("content", mMessages.get(i).getContent());
+        Bundle bundle = new Bundle();
+        bundle.putString("name", mMessages.get(i).getName());
+        bundle.putString("content", mMessages.get(i).getContent());
+        bundle.putString("num", mMessages.get(i).getNum());
+        intent.putExtras(bundle);
         startActivity(intent);
     }
     //无消息记录

@@ -4,6 +4,9 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.bbk.zyj.myapplication.Message;
+import com.bbk.zyj.myapplication.database.MessageDbSchema.MessageTable;
+
 /**
  * Created by Administrator on 2016/7/20.
  */
@@ -17,7 +20,11 @@ public class MessageBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "create table message(name varchar(20) not null, password varchar(100);";
+        String sql = "create table " + MessageTable.TABLENAME + "(" +
+                MessageTable.Cols.NAME + " varchar(20)," +
+                MessageTable.Cols.NUM + " varchar(20) primary key not null," +
+                MessageTable.Cols.CONTENT + " varchar(100)," +
+                MessageTable.Cols.ICON + " integer);";
         db.execSQL(sql);
     }
 
