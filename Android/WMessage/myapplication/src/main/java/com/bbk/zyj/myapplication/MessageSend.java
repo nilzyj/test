@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
@@ -16,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MessageSend extends Activity {
@@ -43,7 +45,13 @@ public class MessageSend extends Activity {
 //                String name = bundle.getString("name");
 //                String num = bundle.getString("num");
         String content = bundle.getString("content");
+        final String num = bundle.getString("num");
+        Log.i("zyj", "onCreate: " + content);
+        mList = new ArrayList<>();
         mList.add(content);
+        mList.add("content1");
+        mList.add("content2");
+        mList.add("content3");
 
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);
@@ -53,6 +61,9 @@ public class MessageSend extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("num", num);
+                intentEdit.putExtras(bundle);
                 startActivity(intentEdit);
             }
         });

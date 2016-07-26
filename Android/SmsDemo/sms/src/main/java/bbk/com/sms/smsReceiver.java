@@ -38,8 +38,9 @@ public class smsReceiver extends BroadcastReceiver {
         ContentValues cv = new ContentValues();
         cv.put("content",content);
         db.insert("content",null,cv);
-        Cursor c = db.query(content,null,null,null,null,null,null,null);
-        if (c.moveToFirst()){
+        Cursor c = db.query("content",null,null,null,null,null,null,null);
+        c.moveToFirst();
+        while (c.moveToNext()){
             Log.d("db",c.getString(c.getColumnIndex("content")));
         }
         db.close();

@@ -47,7 +47,7 @@ public class MessageLab {
         }
         Message message = new Message();
         message.setName("name");
-        message.setNum("18463101652");
+        message.setNum("5554");
         message.setContent("content");
         message.setIcon(R.drawable.icon);
         message.setSend(true);

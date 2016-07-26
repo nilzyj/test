@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_send_message">
+    </ListView>
+
+    <Button
+        android:layout_width="178dp"
+        android:layout_height="32dp"
+        android:id="@+id/btn_send_message"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_send"
+        android:text="发短信"
+        android:textSize="13sp"
+        android:textColor="#28d600"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_img_no_message"
+        android:src="@drawable/no_more"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_no_message"
+        android:text="@string/no_message"
+        android:textSize="11sp"
+        android:textColor="#cccccc"
+        android:layout_below="@+id/iv_img_no_message"
+        android:layout_marginLeft="65dp"
+        android:paddingTop="8dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

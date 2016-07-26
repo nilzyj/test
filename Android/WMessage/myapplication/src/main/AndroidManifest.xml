@@ -23,5 +23,7 @@
         <activity android:name=".Binding"/>
         <activity android:name=".MessageEdit"/>
     </application>
-
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 </manifest>

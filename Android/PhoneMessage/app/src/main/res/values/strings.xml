@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhoneMessage</string>
+    <string name="send_message">发短信</string>
+    <string name="no_message">无消息记录</string>
+    <string name="contact">通讯录</string>
+    <string name="binding">请先绑定APP</string>
+    <string name="title_activity_message_send">message_send</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="send">发送</string>
+</resources>
