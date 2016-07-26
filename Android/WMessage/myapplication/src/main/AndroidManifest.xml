@@ -19,19 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MessageSend"
-            android:label="@string/title_activity_message_send">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity android:name=".Binding">
-        </activity>
-        <activity android:name=".MessageEdit">
-        </activity>
+        <activity android:name=".MessageSend"/>
+        <activity android:name=".Binding"/>
+        <activity android:name=".MessageEdit"/>
     </application>
 
 </manifest>

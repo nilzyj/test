@@ -16,6 +16,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class MessageSend extends Activity {
 
     private TextView mTextView;
@@ -26,40 +28,34 @@ public class MessageSend extends Activity {
     private Button btnSendMessage;
     private ListView lvSendMessage;
 
+    private List<String> mList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_send);
-        final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub);
-        stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
+        mTextView = (TextView) findViewById(R.id.text);
+        ivNoMessage = (ImageView) findViewById(R.id.iv_img_no_message);
+        tvNoMessage = (TextView) findViewById(R.id.tv_no_message);
+        lvSendMessage = (ListView) findViewById(R.id.lv_send_message);
+
+        Bundle bundle = getIntent().getExtras();
+//                String name = bundle.getString("name");
+//                String num = bundle.getString("num");
+        String content = bundle.getString("content");
+        mList.add(content);
+
+        MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
+        lvSendMessage.setAdapter(adapter);
+
+        btnSendMessage = (Button) findViewById(R.id.btn_send_message);
+        btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onLayoutInflated(WatchViewStub stub) {
-                mTextView = (TextView) stub.findViewById(R.id.text);
-                ivNoMessage = (ImageView) stub.findViewById(R.id.iv_img_no_message);
-                tvNoMessage = (TextView) stub.findViewById(R.id.tv_no_message);
-                lvSendMessage = (ListView) stub.findViewById(R.id.lv_send_message);
-
-                Bundle bundle = getIntent().getExtras();
-                String name = bundle.getString("name");
-                String num = bundle.getString("num");
-                String content = bundle.getString("content");
-
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(MessageSend.this
-                        , android.R.layout.simple_list_item_1, new String[] {content});
-                lvSendMessage.setAdapter(adapter);
-
-                btnSendMessage = (Button) findViewById(R.id.btn_send_message);
-                btnSendMessage.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
-                        startActivity(intentEdit);
-                    }
-                });
-
+            public void onClick(View v) {
+                Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
+                startActivity(intentEdit);
             }
         });
-
 
     }
 }

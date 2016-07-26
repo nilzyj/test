@@ -12,6 +12,8 @@ public class Message {
     private String num;
     //头像
     private int icon;
+    //发送的消息true,收到的消息false
+    private boolean isSend;
 
     public int getIcon() {
         return icon;
@@ -43,5 +45,13 @@ public class Message {
 
     public void setNum(String num) {
         this.num = num;
+    }
+
+    public boolean isSend() {
+        return isSend;
+    }
+
+    public void setSend(boolean send) {
+        isSend = send;
     }
 }
