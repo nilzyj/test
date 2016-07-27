@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.provider.Telephony;
 import android.util.Log;
 
-import java.util.regex.Pattern;
 
 /**
  * Created by Administrator on 2016/7/8.

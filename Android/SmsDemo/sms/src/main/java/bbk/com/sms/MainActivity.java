@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
                 mEditText2.setText("");
                 DatabaseHelper database = new DatabaseHelper(MainActivity.this);
                 SQLiteDatabase db = database.getReadableDatabase();
-                Cursor cursor = db.query("content",null,null,null,null,null,null);
+                Cursor cursor = db.query("content", null, null, null, null, null, null);
                 if(cursor.moveToFirst()){
                     String content = cursor.getString(cursor.getColumnIndex("content"));
                     mTextVIew.setText(content);

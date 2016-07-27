@@ -44,16 +44,16 @@ public class MainActivity extends Activity {
         etQueryName = (EditText) findViewById(R.id.et_query_name);
         btnQuery = (Button) findViewById(R.id.btn_query);//query
 
-        DatabaseHelper database = new DatabaseHelper(this,DB_NAME,null,VERSION);
+        DatabaseHelper database = new DatabaseHelper(this, DB_NAME, null, VERSION);
         final SQLiteDatabase db = database.getWritableDatabase();
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ContentValues cv = new ContentValues();
-                cv.put("username",etAddName.getText().toString());
-                cv.put("password",etAddPassword.getText().toString());
-                db.insert("user",null,cv);
+                cv.put("username", etAddName.getText().toString());
+                cv.put("password", etAddPassword.getText().toString());
+                db.insert("user", null, cv);
                 etAddName.setText("");
                 etAddPassword.setText("");
             }
@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 String whereClause = "username=?";
                 String whereArgs[] = {etDeleteName.getText().toString()};
-                db.delete("user",whereClause,whereArgs);
+                db.delete("user", whereClause, whereArgs);
                 etDeleteName.setText("");
             }
         });
@@ -73,10 +73,10 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 ContentValues cv = new ContentValues();
-                cv.put("password",etUpdatePassword.getText().toString());
+                cv.put("password", etUpdatePassword.getText().toString());
                 String whereClause = "username=?";
                 String whereArgs[] = {etUpdateName.getText().toString()};
-                db.update("user",cv,whereClause,whereArgs);
+                db.update("user", cv, whereClause, whereArgs);
                 etUpdateName.setText("");
                 etUpdatePassword.setText("");
             }
@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 String whereArgs[] = {etQueryName.getText().toString()};
-                Cursor cursor = db.query("user",null,"username=?",whereArgs,null,null,null);
+                Cursor cursor = db.query("user", null, "username=?", whereArgs, null, null, null);
                 if(cursor.moveToFirst()){
                     String password = cursor.getString(cursor.getColumnIndex("password"));
                     etQueryName.setText(password);
