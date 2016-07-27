@@ -21,10 +21,13 @@ public class MessageBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "create table " + MessageTable.TABLENAME + "(" +
+                MessageTable.Cols.ID + " integer primary key auto increment" +
                 MessageTable.Cols.NAME + " varchar(20)," +
-                MessageTable.Cols.NUM + " varchar(20) primary key not null," +
+                MessageTable.Cols.NUMBER + " varchar(20) not null," +
+                MessageTable.Cols.TIME + " varchar(30)" +
                 MessageTable.Cols.CONTENT + " varchar(100)," +
-                MessageTable.Cols.ICON + " integer);";
+                MessageTable.Cols.ICON + " integer +" +
+                MessageTable.Cols.ISSEND + " boolean);";
         db.execSQL(sql);
     }
 

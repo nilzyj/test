@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.bbk.zyj.myapplication.database.MessageBaseHelper;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class MessageActivity extends Activity {
@@ -20,10 +21,7 @@ public class MessageActivity extends Activity {
     //绑定状态
     private  static final boolean CONTECT_STATE = true;
 
-//    private ImageView mImageView;
     private TextView mTextView;
-//    private TextView mNameTextView;
-//    private TextView mContentTextView;
     private ListView mListView;
     private List<Message> mMessages;
 
@@ -47,9 +45,7 @@ public class MessageActivity extends Activity {
                             //有消息记录
                             Intent intent = new Intent(MessageActivity.this, MessageSend.class);
                             Bundle bundle = new Bundle();
-                            bundle.putString("name", mMessages.get(i).getName());
-                            bundle.putString("content", mMessages.get(i).getContent());
-                            bundle.putString("num", mMessages.get(i).getNum());
+                            bundle.putSerializable("message", (Serializable) mMessages);
                             intent.putExtras(bundle);
                             startActivity(intent);
                         } else {
@@ -75,8 +71,6 @@ public class MessageActivity extends Activity {
 
     public void initView(WatchViewStub stub) {
         mTextView = (TextView) stub.findViewById(R.id.text);
-        //mNameTextView = (TextView) stub.findViewById(R.id.tv_name);
-        //mContentTextView = (TextView) stub.findViewById(R.id.tv_content);
         mListView = (ListView) stub.findViewById(R.id.listview);
     }
 

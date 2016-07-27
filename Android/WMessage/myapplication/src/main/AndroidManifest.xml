@@ -22,6 +22,11 @@
         <activity android:name=".MessageSend"/>
         <activity android:name=".Binding"/>
         <activity android:name=".MessageEdit"/>
+        <receiver android:name=".MessageReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
     </application>
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />

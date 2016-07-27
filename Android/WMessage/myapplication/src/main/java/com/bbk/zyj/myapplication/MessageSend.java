@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class MessageSend extends Activity {
     private Button btnSendMessage;
     private ListView lvSendMessage;
 
-    private List<String> mList;
+    private List<Message> mList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,16 +43,8 @@ public class MessageSend extends Activity {
         lvSendMessage = (ListView) findViewById(R.id.lv_send_message);
 
         Bundle bundle = getIntent().getExtras();
-//                String name = bundle.getString("name");
-//                String num = bundle.getString("num");
-        String content = bundle.getString("content");
-        final String num = bundle.getString("num");
-        Log.i("zyj", "onCreate: " + content);
         mList = new ArrayList<>();
-        mList.add(content);
-        mList.add("content1");
-        mList.add("content2");
-        mList.add("content3");
+        mList = (List<Message>) bundle.getSerializable("message");
 
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);
@@ -62,7 +55,7 @@ public class MessageSend extends Activity {
             public void onClick(View v) {
                 Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("num", num);
+                bundle.putSerializable("message", (Serializable) mList);
                 intentEdit.putExtras(bundle);
                 startActivity(intentEdit);
             }

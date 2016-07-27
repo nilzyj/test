@@ -39,7 +39,7 @@ public class MessageLab {
         while(cursor.moveToNext()){
             Message message = new Message();
             message.setName(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NAME)));
-            message.setNum(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NUM)));
+            message.setNum(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NUMBER)));
             message.setContent(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.CONTENT)));
             message.setIcon(R.drawable.icon);
             message.setSend(true);
@@ -47,7 +47,7 @@ public class MessageLab {
         }
         Message message = new Message();
         message.setName("name");
-        message.setNum("5554");
+        message.setNum("18463101652");
         message.setContent("content");
         message.setIcon(R.drawable.icon);
         message.setSend(true);

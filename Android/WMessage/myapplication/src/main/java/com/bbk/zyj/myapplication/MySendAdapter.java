@@ -16,27 +16,27 @@ import java.util.List;
  * Created by Administrator on 2016/7/18.
  */
 public class MySendAdapter extends BaseAdapter {
-    private List<String> mContent;
+    private List<Message> mMessage;
     private Context mContext;
 
     class ViewHolder
     {
-        TextView content,time;
+        TextView mContentLeft, mContentRight, mTimeLeft, mTimeRight;
     }
 
-    public MySendAdapter(Context context, List<String> content) {
-        this.mContent = content;
+    public MySendAdapter(Context context, List<Message> messages) {
+        this.mMessage = messages;
         this.mContext = context;
     }
 
     @Override
     public int getCount() {
-        return mContent.size();
+        return mMessage.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return mContent.get(i);
+        return mMessage.get(i);
     }
 
     @Override
@@ -50,8 +50,10 @@ public class MySendAdapter extends BaseAdapter {
         if (view == null) {
             view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
             holder = new ViewHolder();
-            holder.content = (TextView) view.findViewById(R.id.tv_content_left);
-            holder.time = (TextView) view.findViewById(R.id.tv_time_left);
+            holder.mContentLeft = (TextView) view.findViewById(R.id.tv_content_left);
+            holder.mTimeLeft = (TextView) view.findViewById(R.id.tv_time_left);
+            holder.mContentRight = (TextView) view.findViewById(R.id.tv_content_right);
+            holder.mTimeRight = (TextView) view.findViewById(R.id.tv_time_right);
             view.setTag(holder);
         } else {
             holder = (ViewHolder) view.getTag();
@@ -60,8 +62,13 @@ public class MySendAdapter extends BaseAdapter {
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
         String str = format.format(date);
-        holder.time.setText(str);
-        holder.content.setText(mContent.get(i));
+        if (mMessage.get(i).isSend()) {
+            holder.mContentLeft.setText(mMessage.get(i).getContent());
+            holder.mTimeLeft.setText(str);
+        } else {
+            holder.mContentRight.setText(mMessage.get(i).getContent());
+            holder.mTimeRight.setText(str);
+        }
         return view;
     }
 }

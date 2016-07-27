@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.telephony.SmsMessage;
 import android.util.Log;
@@ -44,6 +43,6 @@ public class smsReceiver extends BroadcastReceiver {
             Log.d("db",c.getString(c.getColumnIndex("content")));
         }
         db.close();
-        Log.d("sms receive",content);
+        Log.d("sms content",content);
     }
 }
