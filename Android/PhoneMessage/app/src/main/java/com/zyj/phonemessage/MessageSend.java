@@ -2,28 +2,31 @@ package com.zyj.phonemessage;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.zyj.phonemessage.database.MessageBaseHelper;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MessageSend extends Activity {
+public class MessageSend extends Activity implements Serializable{
 
     private TextView mTextView;
     private ImageView ivNoMessage;
     private TextView tvNoMessage;
-    private TextView tvReceiveMessage;
-    private TextView tvSendMessage;
+
     private Button btnSendMessage;
     private ListView lvSendMessage;
 
-    private List<String> mList;
+    private List<Message> mList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,18 +37,26 @@ public class MessageSend extends Activity {
         tvNoMessage = (TextView) findViewById(R.id.tv_no_message);
         lvSendMessage = (ListView) findViewById(R.id.lv_send_message);
 
-        Bundle bundle = getIntent().getExtras();
-//                String name = bundle.getString("name");
-//                String num = bundle.getString("num");
-        String content = bundle.getString("content");
-        final String num = bundle.getString("num");
-        Log.i("zyj", "onCreate: " + content);
-        mList = new ArrayList<>();
-        mList.add(content);
-        mList.add("content1");
-        mList.add("content2");
-        mList.add("content3");
+        MessageBaseHelper database = new MessageBaseHelper(MessageSend.this);
+        final SQLiteDatabase db = database.getWritableDatabase();
 
+        mList = new ArrayList<>();
+        Message message1 = new Message();
+        message1.setName("name");
+        message1.setNum("18463101652");
+        message1.setContent("content");
+        message1.setSend(true);
+        message1.setIcon(R.drawable.icon);
+        mList.add(message1);
+        Message message2 = new Message();
+        message2.setName("name1");
+        message2.setNum("18463101652");
+        message2.setContent("content1");
+        message2.setSend(false);
+        message2.setIcon(R.drawable.icon);
+        mList.add(message2);
+
+        //显示对话
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);
 
@@ -54,10 +65,9 @@ public class MessageSend extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("num", num);
-                intentEdit.putExtras(bundle);
-                startActivity(intentEdit);
+                SharedPreferences sharedPreferences = getSharedPreferences("msg", MODE_PRIVATE);
+                String str = sharedPreferences.getString("message", "");
+
             }
         });
 

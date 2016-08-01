@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -15,27 +16,27 @@ import java.util.List;
  * Created by Administrator on 2016/7/18.
  */
 public class MySendAdapter extends BaseAdapter {
-    private List<String> mContent;
+    private List<Message> mMessages = new ArrayList<>();
     private Context mContext;
 
     class ViewHolder
     {
-        TextView content,time;
+        TextView mContentLeft, mContentRight, mTimeLeft, mTimeRight;
     }
 
-    public MySendAdapter(Context context, List<String> content) {
-        this.mContent = content;
+    public MySendAdapter(Context context, List<Message> messages) {
+        this.mMessages = messages;
         this.mContext = context;
     }
 
     @Override
     public int getCount() {
-        return mContent.size();
+        return mMessages.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return mContent.get(i);
+        return mMessages.get(i);
     }
 
     @Override
@@ -46,21 +47,30 @@ public class MySendAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder holder;
-        if (view == null) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
             holder = new ViewHolder();
-            holder.content = (TextView) view.findViewById(R.id.tv_content_left);
-            holder.time = (TextView) view.findViewById(R.id.tv_time_left);
+            if (mMessages.get(i).isSend()) {
+                view = LayoutInflater.from(mContext).inflate(R.layout.item_message_right, null);
+                holder.mContentRight = (TextView) view.findViewById(R.id.tv_content_right);
+                holder.mTimeRight = (TextView) view.findViewById(R.id.tv_time_right);
+            } else {
+                view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
+                holder.mContentLeft = (TextView) view.findViewById(R.id.tv_content_left);
+                holder.mTimeLeft = (TextView) view.findViewById(R.id.tv_time_left);
+            }
             view.setTag(holder);
-        } else {
-            holder = (ViewHolder) view.getTag();
-        }
 
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
         String str = format.format(date);
-        holder.time.setText(str);
-        holder.content.setText(mContent.get(i));
+        if (mMessages.get(i).isSend()) {
+//            holder.mContentRight.setText(mMessages.get(i).getContent());
+            holder.mContentRight.setText("content1");
+            holder.mTimeRight.setText(str);
+        } else {
+//            holder.mContentLeft.setText(mMessages.get(i).getContent());
+            holder.mContentLeft.setText("content2");
+            holder.mTimeLeft.setText(str);
+        }
         return view;
     }
 }

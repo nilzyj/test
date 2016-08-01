@@ -2,13 +2,19 @@ package com.zyj.phonemessage;
 
 import android.app.Activity;
 import android.app.PendingIntent;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.zyj.phonemessage.database.MessageBaseHelper;
 
 public class MessageEdit extends Activity {
 
@@ -28,20 +34,38 @@ public class MessageEdit extends Activity {
         final PendingIntent pendingMsgReceipt =
                 PendingIntent.getBroadcast(MessageEdit.this, 0, msgReceipt, 0);
 
-        Bundle bundle = getIntent().getExtras();
-        final String num = bundle.getString("num");
+//        Bundle bundle = getIntent().getExtras();
+//        final String num = bundle.getString("num");
 
         et_send = (EditText) findViewById(R.id.et_send);
         btn_send = (Button) findViewById(R.id.btn_send);
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("num", "onClick: " + et_send);
-                smsManager.sendTextMessage(num, null, et_send.getText().toString(), pendingMsgSent,
-                        pendingMsgReceipt);
-                et_send.setText("");
-                Log.d("sms send","send");
+                String content = et_send.getText().toString();
+                if(!content.equals("")) {
+                    smsManager.sendTextMessage("msg", null, content, pendingMsgSent,
+                            pendingMsgReceipt);
+                    et_send.setText("");
+                    saveDb(content);
+                } else {
+                    Toast.makeText(MessageEdit.this, "sent", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+    }
+
+    public void saveDb(String content) {
+        MessageBaseHelper database = new MessageBaseHelper(MessageEdit.this);
+        SQLiteDatabase db = database.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("content",content);
+        db.insert("content",null,cv);
+        Cursor c = db.query("content",null,null,null,null,null,null,null);
+        c.moveToFirst();
+        while (c.moveToNext()){
+            Log.d("db",c.getString(c.getColumnIndex("content")));
+        }
+        db.close();
     }
 }

@@ -45,6 +45,7 @@ public class MessageSend extends Activity {
         Bundle bundle = getIntent().getExtras();
         mList = new ArrayList<>();
         mList = (List<Message>) bundle.getSerializable("message");
+        Message message = new Message();
 
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);

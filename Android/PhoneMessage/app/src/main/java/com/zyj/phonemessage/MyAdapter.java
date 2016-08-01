@@ -14,7 +14,7 @@ import java.util.List;
  * Created by Administrator on 2016/7/18.
  */
 public class MyAdapter extends BaseAdapter {
-    private List<Message> messages;
+    private List<Message> mMessages;
     private Context context;
 
     class ViewHolder
@@ -24,18 +24,18 @@ public class MyAdapter extends BaseAdapter {
     }
 
     public MyAdapter(List<Message> mMessages, Context context) {
-        this.messages = mMessages;
+        this.mMessages = mMessages;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return messages.size();
+        return mMessages.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return messages.get(i);
+        return mMessages.get(i);
     }
 
     @Override
@@ -57,8 +57,8 @@ public class MyAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
 
-        holder.name.setText(messages.get(i).getName());
-        holder.content.setText(messages.get(i).getContent());
+        holder.name.setText(mMessages.get(i).getName());
+        holder.content.setText(mMessages.get(i).getContent());
         holder.icon.setImageResource(R.drawable.icon);
         return view;
     }

@@ -12,17 +12,16 @@ import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class MessageActivity extends Activity {
+public class MessageActivity extends Activity implements Serializable {
 
     //绑定状态
     private static final boolean CONTECT_STATE = true;
 
-    //    private ImageView mImageView;
     private TextView mTextView;
-    //    private TextView mNameTextView;
-//    private TextView mContentTextView;
     private ListView mListView;
     private List<Message> mMessages;
 
@@ -30,6 +29,8 @@ public class MessageActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mMessages = new ArrayList<>();
 
         initView();
         initData();
@@ -41,18 +42,13 @@ public class MessageActivity extends Activity {
                 if (CONTECT_STATE) {
                     //有消息记录
                     Intent intent = new Intent(MessageActivity.this, MessageSend.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("name", mMessages.get(i).getName());
-                    bundle.putString("content", mMessages.get(i).getContent());
-                    bundle.putString("num", mMessages.get(i).getNum());
-                    intent.putExtras(bundle);
+                    intent.putExtra("message", (Serializable) mMessages);
                     startActivity(intent);
                 } else {
                     //无消息记录
                     Intent intent = new Intent(MessageActivity.this, Binding.class);
                     startActivity(intent);
                 }
-
             }
         });
 
@@ -69,8 +65,6 @@ public class MessageActivity extends Activity {
 
     public void initView() {
         mTextView = (TextView) findViewById(R.id.text);
-        //mNameTextView = (TextView) stub.findViewById(R.id.tv_name);
-        //mContentTextView = (TextView) stub.findViewById(R.id.tv_content);
         mListView = (ListView) findViewById(R.id.listview);
     }
 
