@@ -2,7 +2,7 @@ package com.zyj.phonemessage;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +10,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.zyj.phonemessage.database.MessageDbSchema.*;
 
 public class MessageSend extends Activity implements Serializable{
 
@@ -41,20 +44,23 @@ public class MessageSend extends Activity implements Serializable{
         final SQLiteDatabase db = database.getWritableDatabase();
 
         mList = new ArrayList<>();
-        Message message1 = new Message();
-        message1.setName("name");
-        message1.setNum("18463101652");
-        message1.setContent("content");
-        message1.setSend(true);
-        message1.setIcon(R.drawable.icon);
-        mList.add(message1);
-        Message message2 = new Message();
-        message2.setName("name1");
-        message2.setNum("18463101652");
-        message2.setContent("content1");
-        message2.setSend(false);
-        message2.setIcon(R.drawable.icon);
-        mList.add(message2);
+        //通过name查询db
+        final Intent intent = getIntent();
+        final String num = intent.getStringExtra(MessageTable.Cols.NUM);
+
+        final Cursor c = db.query(MessageTable.TABLENAME, null, "num=?", new String[] {num}
+                , null, null, null);
+        while (c.moveToNext()) {
+            Message message = new Message();
+            message.setName(c.getString(c.getColumnIndex(MessageTable.Cols.NAME)));
+            message.setNum(num);
+            Toast.makeText(MessageSend.this, c.getString(
+                    c.getColumnIndex(MessageTable.Cols.CONTENT)), Toast.LENGTH_SHORT).show();
+            message.setContent(c.getString(c.getColumnIndex(MessageTable.Cols.CONTENT)));
+            message.setSend(c.getInt(c.getColumnIndex(MessageTable.Cols.ISSEND)));
+            message.setIcon(R.drawable.icon);
+            mList.add(message);
+        }
 
         //显示对话
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
@@ -65,9 +71,10 @@ public class MessageSend extends Activity implements Serializable{
             @Override
             public void onClick(View v) {
                 Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
-                SharedPreferences sharedPreferences = getSharedPreferences("msg", MODE_PRIVATE);
-                String str = sharedPreferences.getString("message", "");
-
+                intentEdit.putExtra(MessageTable.Cols.NUM, num);
+                intentEdit.putExtra(MessageTable.Cols.NAME
+                        , c.getString(c.getColumnIndex(MessageTable.Cols.NAME)));
+                startActivity(intentEdit);
             }
         });
 

@@ -11,10 +11,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
+import com.zyj.phonemessage.database.MessageDbSchema;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.zyj.phonemessage.database.MessageDbSchema.*;
 
 public class MessageActivity extends Activity implements Serializable {
 
@@ -43,7 +46,7 @@ public class MessageActivity extends Activity implements Serializable {
                     //有消息记录
                     Intent intent = new Intent(MessageActivity.this, MessageSend.class);
                     //传递姓名,通过姓名获取信息内容?
-                    intent.putExtra("message", (Serializable) mMessages);
+                    intent.putExtra(MessageTable.Cols.NUM, mMessages.get(i).getNum());
                     startActivity(intent);
                 } else {
                     //无消息记录

@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class MyAdapter extends BaseAdapter {
     private List<Message> mMessages;
-    private Context context;
+    private Context mContext;
 
     class ViewHolder
     {
@@ -23,9 +23,9 @@ public class MyAdapter extends BaseAdapter {
         TextView name,content;
     }
 
-    public MyAdapter(List<Message> mMessages, Context context) {
-        this.mMessages = mMessages;
-        this.context = context;
+    public MyAdapter(List<Message> messages, Context context) {
+        this.mMessages = messages;
+        this.mContext = context;
     }
 
     @Override
@@ -47,7 +47,7 @@ public class MyAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder holder;
         if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.textview, null);
+            view = LayoutInflater.from(mContext).inflate(R.layout.textview, null);
             holder = new ViewHolder();
             holder.name = (TextView) view.findViewById(R.id.tv_name);
             holder.content = (TextView) view.findViewById(R.id.tv_content);

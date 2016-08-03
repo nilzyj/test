@@ -1,11 +1,14 @@
 package com.zyj.phonemessage;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -46,29 +49,27 @@ public class MySendAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        ViewHolder holder;
-            holder = new ViewHolder();
-            if (mMessages.get(i).isSend()) {
-                view = LayoutInflater.from(mContext).inflate(R.layout.item_message_right, null);
-                holder.mContentRight = (TextView) view.findViewById(R.id.tv_content_right);
-                holder.mTimeRight = (TextView) view.findViewById(R.id.tv_time_right);
-            } else {
-                view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
-                holder.mContentLeft = (TextView) view.findViewById(R.id.tv_content_left);
-                holder.mTimeLeft = (TextView) view.findViewById(R.id.tv_time_left);
-            }
-            view.setTag(holder);
+        ViewHolder holder = new ViewHolder();
+        if (mMessages.get(i).getSend() == 1) {
+            view = LayoutInflater.from(mContext).inflate(R.layout.item_message_right, null);
+            holder.mContentRight = (TextView) view.findViewById(R.id.tv_content_right);
+            holder.mTimeRight = (TextView) view.findViewById(R.id.tv_time_right);
+        } else {
+            view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
+            holder.mContentLeft = (TextView) view.findViewById(R.id.tv_content_left);
+            holder.mTimeLeft = (TextView) view.findViewById(R.id.tv_time_left);
+        }
+        view.setTag(holder);
 
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
         String str = format.format(date);
-        if (mMessages.get(i).isSend()) {
-//            holder.mContentRight.setText(mMessages.get(i).getContent());
-            holder.mContentRight.setText("content1");
+
+        if (mMessages.get(i).getSend() == 1) {
+            holder.mContentRight.setText(mMessages.get(i).getContent());
             holder.mTimeRight.setText(str);
         } else {
-//            holder.mContentLeft.setText(mMessages.get(i).getContent());
-            holder.mContentLeft.setText("content2");
+            holder.mContentLeft.setText(mMessages.get(i).getContent());
             holder.mTimeLeft.setText(str);
         }
         return view;
