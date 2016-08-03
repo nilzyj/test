@@ -1,19 +1,16 @@
 package com.example.sharedperference;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class RegisterActivity extends ActionBarActivity {
+public class RegisterActivity extends Activity {
 	private TextView account,psw;
 	private Button btn_register;
 	@Override
