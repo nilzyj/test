@@ -40,16 +40,10 @@ public class MessageLab {
             message.setNum(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NUM)));
             message.setContent(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.CONTENT)));
             message.setIcon(R.drawable.icon);
-            message.setSend(true);
+            message.setSend(cursor.getInt(cursor.getColumnIndex(MessageTable.Cols.ISSEND)));
             mMessages.add(message);
         }
-        Message message = new Message();
-        message.setName("name");
-        message.setNum("5554");
-        message.setContent("content");
-        message.setIcon(R.drawable.icon);
-        message.setSend(true);
-        mMessages.add(message);
+        db.close();
     }
 
     public void addMessage(Message m) {

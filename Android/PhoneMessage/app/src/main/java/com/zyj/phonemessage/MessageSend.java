@@ -2,6 +2,8 @@ package com.zyj.phonemessage;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,21 +11,26 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.zyj.phonemessage.database.MessageBaseHelper;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MessageSend extends Activity {
+import static com.zyj.phonemessage.database.MessageDbSchema.*;
+
+public class MessageSend extends Activity implements Serializable{
 
     private TextView mTextView;
     private ImageView ivNoMessage;
     private TextView tvNoMessage;
-    private TextView tvReceiveMessage;
-    private TextView tvSendMessage;
+
     private Button btnSendMessage;
     private ListView lvSendMessage;
 
-    private List<String> mList;
+    private List<Message> mList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,29 +41,45 @@ public class MessageSend extends Activity {
         tvNoMessage = (TextView) findViewById(R.id.tv_no_message);
         lvSendMessage = (ListView) findViewById(R.id.lv_send_message);
 
-        Bundle bundle = getIntent().getExtras();
-//                String name = bundle.getString("name");
-//                String num = bundle.getString("num");
-        String content = bundle.getString("content");
-        final String num = bundle.getString("num");
-        Log.i("zyj", "onCreate: " + content);
-        mList = new ArrayList<>();
-        mList.add(content);
-        mList.add("content1");
-        mList.add("content2");
-        mList.add("content3");
+        MessageBaseHelper database = new MessageBaseHelper(MessageSend.this);
+        final SQLiteDatabase db = database.getWritableDatabase();
 
+        mList = new ArrayList<>();
+        //通过name查询db
+        final Intent intent = getIntent();
+        final String num = intent.getStringExtra(MessageTable.Cols.NUM);
+        String name = null;
+
+        final Cursor c = db.query(MessageTable.TABLENAME, null, "num=?", new String[] {num}
+                , null, null, null);
+        while (c.moveToNext()) {
+            Message message = new Message();
+            message.setName(c.getString(c.getColumnIndex(MessageTable.Cols.NAME)));
+            name = c.getString(c.getColumnIndex(MessageTable.Cols.NAME));
+            message.setNum(num);
+            message.setContent(c.getString(c.getColumnIndex(MessageTable.Cols.CONTENT)));
+            message.setSend(c.getInt(c.getColumnIndex(MessageTable.Cols.ISSEND)));
+            message.setIcon(R.drawable.icon);
+            mList.add(message);
+        }
+
+        db.close();
+
+        //显示对话
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);
 
+
+
         btnSendMessage = (Button) findViewById(R.id.btn_send_message);
+        final String finalName = name;
+        Log.i("zyj", "onCreate: " + name);
         btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("num", num);
-                intentEdit.putExtras(bundle);
+                intentEdit.putExtra(MessageTable.Cols.NUM, num);
+                intentEdit.putExtra(MessageTable.Cols.NAME, finalName);
                 startActivity(intentEdit);
             }
         });

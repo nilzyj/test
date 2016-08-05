@@ -13,7 +13,7 @@ public class Message {
     //头像
     private int icon;
     //发送的消息true,收到的消息false
-    private boolean isSend;
+    private int isSend;
 
     public int getIcon() {
         return icon;
@@ -47,11 +47,11 @@ public class Message {
         this.num = num;
     }
 
-    public boolean isSend() {
+    public int getSend() {
         return isSend;
     }
 
-    public void setSend(boolean send) {
+    public void setSend(int send) {
         isSend = send;
     }
 }

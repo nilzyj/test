@@ -49,9 +49,16 @@ public class MessageLab {
         message.setName("name");
         message.setNum("18463101652");
         message.setContent("content");
-        message.setIcon(R.drawable.icon);
         message.setSend(true);
+        message.setIcon(R.drawable.icon);
         mMessages.add(message);
+        Message message1 = new Message();
+        message.setName("name1");
+        message.setNum("18463101652");
+        message.setContent("content1");
+        message.setSend(false);
+        message.setIcon(R.drawable.icon);
+        mMessages.add(message1);
     }
 
     public void addMessage(Message m) {
