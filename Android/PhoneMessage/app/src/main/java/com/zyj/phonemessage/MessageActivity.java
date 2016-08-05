@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
-import com.zyj.phonemessage.database.MessageDbSchema;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -27,6 +26,7 @@ public class MessageActivity extends Activity implements Serializable {
     private TextView mTextView;
     private ListView mListView;
     private List<Message> mMessages;
+    MyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +78,18 @@ public class MessageActivity extends Activity implements Serializable {
         mMessages = MessageLab.get(MessageActivity.this, db).getMessages();
         db.close();
 
-        MyAdapter adapter = new MyAdapter(mMessages, MessageActivity.this);
+        adapter = new MyAdapter(mMessages, MessageActivity.this);
         mListView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (adapter == null) {
+            MyAdapter adapter = new MyAdapter(mMessages, MessageActivity.this);
+            mListView.setAdapter(adapter);
+        } else {
+            adapter.notifyDataSetChanged();
+        }
     }
 }

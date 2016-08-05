@@ -66,9 +66,9 @@ public class MessageEdit extends Activity {
         ContentValues cv = new ContentValues();
         cv.put(MessageTable.Cols.CONTENT, content);
         cv.put(MessageTable.Cols.NUM, num);
-        cv.put(MessageTable.Cols.NAME, name);
         cv.put(MessageTable.Cols.ISSEND, 1);
-        db.insert(MessageTable.Cols.CONTENT, null, cv);
+        cv.put(MessageTable.Cols.NAME, name);
+        db.insert(MessageTable.TABLENAME, null, cv);
         db.close();
     }
 }

@@ -43,6 +43,7 @@ public class MessageLab {
             message.setSend(cursor.getInt(cursor.getColumnIndex(MessageTable.Cols.ISSEND)));
             mMessages.add(message);
         }
+        db.close();
     }
 
     public void addMessage(Message m) {

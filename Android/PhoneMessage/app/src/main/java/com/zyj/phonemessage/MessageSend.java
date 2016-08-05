@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -47,33 +48,38 @@ public class MessageSend extends Activity implements Serializable{
         //通过name查询db
         final Intent intent = getIntent();
         final String num = intent.getStringExtra(MessageTable.Cols.NUM);
+        String name = null;
 
         final Cursor c = db.query(MessageTable.TABLENAME, null, "num=?", new String[] {num}
                 , null, null, null);
         while (c.moveToNext()) {
             Message message = new Message();
             message.setName(c.getString(c.getColumnIndex(MessageTable.Cols.NAME)));
+            name = c.getString(c.getColumnIndex(MessageTable.Cols.NAME));
             message.setNum(num);
-            Toast.makeText(MessageSend.this, c.getString(
-                    c.getColumnIndex(MessageTable.Cols.CONTENT)), Toast.LENGTH_SHORT).show();
             message.setContent(c.getString(c.getColumnIndex(MessageTable.Cols.CONTENT)));
             message.setSend(c.getInt(c.getColumnIndex(MessageTable.Cols.ISSEND)));
             message.setIcon(R.drawable.icon);
             mList.add(message);
         }
 
+        db.close();
+
         //显示对话
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);
 
+
+
         btnSendMessage = (Button) findViewById(R.id.btn_send_message);
+        final String finalName = name;
+        Log.i("zyj", "onCreate: " + name);
         btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentEdit = new Intent(MessageSend.this, MessageEdit.class);
                 intentEdit.putExtra(MessageTable.Cols.NUM, num);
-                intentEdit.putExtra(MessageTable.Cols.NAME
-                        , c.getString(c.getColumnIndex(MessageTable.Cols.NAME)));
+                intentEdit.putExtra(MessageTable.Cols.NAME, finalName);
                 startActivity(intentEdit);
             }
         });
