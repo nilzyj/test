@@ -1,12 +1,15 @@
 package com.zyj.phonemessage;
 
 import android.content.Context;
+import android.graphics.BitmapFactory;
+import android.graphics.Shader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.zyj.phonemessage.roundimageview.RoundedImageView;
 
 import java.util.List;
 
@@ -19,7 +22,7 @@ public class MyAdapter extends BaseAdapter {
 
     class ViewHolder
     {
-        ImageView icon;
+        RoundedImageView icon;
         TextView name,content;
     }
 
@@ -51,7 +54,7 @@ public class MyAdapter extends BaseAdapter {
             holder = new ViewHolder();
             holder.name = (TextView) view.findViewById(R.id.tv_name);
             holder.content = (TextView) view.findViewById(R.id.tv_content);
-            holder.icon = (ImageView) view.findViewById(R.id.iv_icon);
+            holder.icon = (RoundedImageView) view.findViewById(R.id.roundedimageview);
             view.setTag(holder);
         } else {
             holder = (ViewHolder) view.getTag();
@@ -63,7 +66,10 @@ public class MyAdapter extends BaseAdapter {
             holder.name.setText(mMessages.get(i).getName());
         }
         holder.content.setText(mMessages.get(i).getContent());
-        holder.icon.setImageResource(R.drawable.icon);
+        holder.icon.setOval(true);
+        holder.icon.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.icon));
+        holder.icon.setTileModeX(Shader.TileMode.CLAMP);
+        holder.icon.setTileModeY(Shader.TileMode.CLAMP);
         return view;
     }
 }

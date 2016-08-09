@@ -45,7 +45,7 @@ public class MessageActivity extends Activity implements Serializable {
                 if (CONTECT_STATE) {
                     //有消息记录
                     Intent intent = new Intent(MessageActivity.this, MessageSend.class);
-                    //传递姓名,通过姓名获取信息内容?
+                    //传递num,通过num获取信息内容
                     intent.putExtra(MessageTable.Cols.NUM, mMessages.get(i).getNum());
                     startActivity(intent);
                 } else {

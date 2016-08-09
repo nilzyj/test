@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -8,12 +9,16 @@
               android:layout_marginLeft="2dp"
               android:layout_marginRight="2dp"
               android:layout_marginBottom="4dp">
-    <ImageView
-        android:id="@+id/iv_icon"
+
+    <com.zyj.phonemessage.roundimageview.RoundedImageView
+        android:id="@+id/roundedimageview"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/icon"/>
+        android:scaleType="centerInside"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="3dip"
+        app:riv_oval="false"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,6 +42,5 @@
             android:textColor="#cccccc"/>
 
     </LinearLayout>
-
 
 </LinearLayout>
