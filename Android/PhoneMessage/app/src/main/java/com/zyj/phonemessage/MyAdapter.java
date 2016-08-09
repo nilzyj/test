@@ -57,7 +57,11 @@ public class MyAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
 
-        holder.name.setText(mMessages.get(i).getName());
+        if (mMessages.get(i).getName() == null) {
+            holder.name.setText(mMessages.get(i).getNum());
+        } else {
+            holder.name.setText(mMessages.get(i).getName());
+        }
         holder.content.setText(mMessages.get(i).getContent());
         holder.icon.setImageResource(R.drawable.icon);
         return view;

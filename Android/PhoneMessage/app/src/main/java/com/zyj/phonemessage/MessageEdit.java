@@ -4,18 +4,15 @@ import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
-import com.zyj.phonemessage.database.MessageDbSchema;
 
 import static com.zyj.phonemessage.database.MessageDbSchema.*;
 
@@ -60,6 +57,10 @@ public class MessageEdit extends Activity {
         });
     }
 
+    /**
+     * 保存发送消息
+     * @param content 发送的消息内容
+     */
     public void saveDb(String content) {
         MessageBaseHelper database = new MessageBaseHelper(MessageEdit.this);
         SQLiteDatabase db = database.getWritableDatabase();

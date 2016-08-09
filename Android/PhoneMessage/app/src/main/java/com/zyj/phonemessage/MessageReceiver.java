@@ -1,8 +1,5 @@
 package com.zyj.phonemessage;
 
-import android.annotation.TargetApi;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,7 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.telephony.SmsMessage;
-import android.util.Log;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
 
@@ -23,7 +19,6 @@ import static com.zyj.phonemessage.database.MessageDbSchema.*;
 public class MessageReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.i("telephony","SMS received");
         Object[] messages = (Object[]) intent.getSerializableExtra("pdus");
         String format = intent.getStringExtra("format");
 
@@ -43,12 +38,21 @@ public class MessageReceiver extends BroadcastReceiver {
         String num = msgs[0].getOriginatingAddress();
 
         saveReceiveToDb(context, num, content);
+
+        //发送通知
         MessageNotification notification = new MessageNotification();
         notification.sendNotification(context, num, content);
 
     }
 
     //保存收到的信息
+
+    /**
+     * 保存接收到的短信
+     * @param context 上下文
+     * @param num 号码
+     * @param content 内容
+     */
     private void saveReceiveToDb(Context context, String num, String content) {
         String name = null;
         MessageBaseHelper helper = new MessageBaseHelper(context);

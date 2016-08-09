@@ -72,6 +72,9 @@ public class MessageActivity extends Activity implements Serializable {
         mListView = (ListView) findViewById(R.id.listview);
     }
 
+    /**
+     * 初始化数据
+     */
     public void initData() {
         MessageBaseHelper database = new MessageBaseHelper(MessageActivity.this);
         final SQLiteDatabase db = database.getWritableDatabase();

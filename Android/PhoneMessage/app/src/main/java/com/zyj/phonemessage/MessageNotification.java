@@ -11,9 +11,15 @@ import android.content.Intent;
  */
 public class MessageNotification {
 
-    NotificationManager mNotificationManager;
-    int mNotificationId;
+    private NotificationManager mNotificationManager;
+    private int mNotificationId;
 
+    /**
+     * 发送通知
+     * @param context 上下文
+     * @param name 姓名
+     * @param content 短信内容
+     */
     public void sendNotification(Context context, String name, String content) {
         Intent intent = new Intent(context, MessageSend.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);

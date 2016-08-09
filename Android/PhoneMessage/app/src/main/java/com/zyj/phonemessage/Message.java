@@ -12,7 +12,7 @@ public class Message {
     private String num;
     //头像
     private int icon;
-    //发送的消息true,收到的消息false
+    //发送的消息1,收到的消息0
     private int isSend;
 
     public int getIcon() {

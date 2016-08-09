@@ -35,12 +35,22 @@ public class MessageLab {
         Cursor cursor = db.query("message", null, null, null, null, null, null);
         cursor.moveToFirst();
         while(cursor.moveToNext()){
+            String name = cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NAME));
+            String num = cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NUM));
+            String content = cursor.getString(cursor.getColumnIndex(MessageTable.Cols.CONTENT));
+            int isSend = cursor.getInt(cursor.getColumnIndex(MessageTable.Cols.ISSEND));
+
             Message message = new Message();
-            message.setName(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NAME)));
-            message.setNum(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NUM)));
-            message.setContent(cursor.getString(cursor.getColumnIndex(MessageTable.Cols.CONTENT)));
+            message.setName(name);
+            message.setNum(num);
+            message.setContent(content);
             message.setIcon(R.drawable.icon);
-            message.setSend(cursor.getInt(cursor.getColumnIndex(MessageTable.Cols.ISSEND)));
+            message.setSend(isSend);
+            if (name == null) {
+                noNameRepeatMessage(mMessages, num);
+            } else {
+                hasNameRepeatMessage(mMessages, name);
+            }
             mMessages.add(message);
         }
         db.close();
@@ -54,7 +64,13 @@ public class MessageLab {
         return  mMessages;
     }
 
-    //返回指定姓名的message
+    //
+
+    /**
+     * 返回指定姓名的message
+     * @param name 指定姓名
+     * @return message
+     */
     public Message getMessage(String name) {
         for (Message message : mMessages) {
             if (message.getName().equals(name)) {
@@ -62,5 +78,21 @@ public class MessageLab {
             }
         }
         return null;
+    }
+
+    private void noNameRepeatMessage(List<Message> mMessages, String num) {
+        for (int i = 0; i < mMessages.size(); i++) {
+            if (mMessages.get(i).getNum().equals(num)) {
+                mMessages.remove(mMessages.get(i));
+            }
+        }
+    }
+
+    private void hasNameRepeatMessage(List<Message> mMessages, String name) {
+        for (int i = 0; i < mMessages.size(); i++) {
+            if (mMessages.get(i).getName().equals(name)) {
+                mMessages.remove(mMessages.get(i));
+            }
+        }
     }
 }
