@@ -12,10 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bbk.zyj.myapplication.database.MessageBaseHelper;
+import com.bbk.zyj.myapplication.database.MessageDbSchema;
 
-import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 消息列表界面Activity
+ */
 public class MessageActivity extends Activity {
 
     //绑定状态
@@ -24,6 +28,7 @@ public class MessageActivity extends Activity {
     private TextView mTextView;
     private ListView mListView;
     private List<Message> mMessages;
+    MyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,8 @@ public class MessageActivity extends Activity {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
 
+				mMessages = new ArrayList<>();
+
                 initView(stub);
                 initData();
 
@@ -43,10 +50,9 @@ public class MessageActivity extends Activity {
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         if (CONTECT_STATE) {
                             //有消息记录
-                            Intent intent = new Intent(MessageActivity.this, MessageSend.class);
-                            Bundle bundle = new Bundle();
-                            bundle.putSerializable("message", (Serializable) mMessages);
-                            intent.putExtras(bundle);
+                    Intent intent = new Intent(MessageActivity.this, MessageSend.class);
+                    //传递num,通过num获取信息内容
+                    intent.putExtra(MessageDbSchema.MessageTable.Cols.NUM, mMessages.get(i).getNum());
                             startActivity(intent);
                         } else {
                             //无消息记录
@@ -74,13 +80,27 @@ public class MessageActivity extends Activity {
         mListView = (ListView) stub.findViewById(R.id.listview);
     }
 
+    /**
+     * 初始化数据
+     */
     public void initData() {
         MessageBaseHelper database = new MessageBaseHelper(MessageActivity.this);
         final SQLiteDatabase db = database.getWritableDatabase();
         mMessages = MessageLab.get(MessageActivity.this, db).getMessages();
         db.close();
 
-        MyAdapter adapter = new MyAdapter(mMessages, MessageActivity.this);
+        adapter = new MyAdapter(mMessages, MessageActivity.this);
         mListView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (adapter == null) {
+            MyAdapter adapter = new MyAdapter(mMessages, MessageActivity.this);
+            mListView.setAdapter(adapter);
+        } else {
+            adapter.notifyDataSetChanged();
+        }
     }
 }

@@ -5,18 +5,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/18.
+ * ��Ϣ�ỰAdapter
  */
 public class MySendAdapter extends BaseAdapter {
-    private List<Message> mMessage;
+    private List<Message> mMessages = new ArrayList<>();
     private Context mContext;
 
     class ViewHolder
@@ -25,18 +26,18 @@ public class MySendAdapter extends BaseAdapter {
     }
 
     public MySendAdapter(Context context, List<Message> messages) {
-        this.mMessage = messages;
+        this.mMessages = messages;
         this.mContext = context;
     }
 
     @Override
     public int getCount() {
-        return mMessage.size();
+        return mMessages.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return mMessage.get(i);
+        return mMessages.get(i);
     }
 
     @Override
@@ -46,28 +47,27 @@ public class MySendAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        ViewHolder holder;
-        if (view == null) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
-            holder = new ViewHolder();
-            holder.mContentLeft = (TextView) view.findViewById(R.id.tv_content_left);
-            holder.mTimeLeft = (TextView) view.findViewById(R.id.tv_time_left);
+        ViewHolder holder = new ViewHolder();
+        if (mMessages.get(i).getSend() == 1) {
+            view = LayoutInflater.from(mContext).inflate(R.layout.item_message_right, null);
             holder.mContentRight = (TextView) view.findViewById(R.id.tv_content_right);
             holder.mTimeRight = (TextView) view.findViewById(R.id.tv_time_right);
-            view.setTag(holder);
         } else {
-            holder = (ViewHolder) view.getTag();
+            view = LayoutInflater.from(mContext).inflate(R.layout.item_message_left, null);
+            holder.mContentLeft = (TextView) view.findViewById(R.id.tv_content_left);
+            holder.mTimeLeft = (TextView) view.findViewById(R.id.tv_time_left);
         }
+        view.setTag(holder);
 
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
         String str = format.format(date);
-        if (mMessage.get(i).isSend()) {
-            holder.mContentLeft.setText(mMessage.get(i).getContent());
-            holder.mTimeLeft.setText(str);
-        } else {
-            holder.mContentRight.setText(mMessage.get(i).getContent());
+        if (mMessages.get(i).getSend() == 1) {
+            holder.mContentRight.setText(mMessages.get(i).getContent());
             holder.mTimeRight.setText(str);
+        } else {
+            holder.mContentLeft.setText(mMessages.get(i).getContent());
+            holder.mTimeLeft.setText(str);
         }
         return view;
     }

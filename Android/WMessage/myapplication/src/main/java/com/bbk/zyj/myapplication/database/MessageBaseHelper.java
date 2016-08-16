@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.bbk.zyj.myapplication.Message;
 import com.bbk.zyj.myapplication.database.MessageDbSchema.MessageTable;
 
 /**
@@ -21,13 +20,11 @@ public class MessageBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "create table " + MessageTable.TABLENAME + "(" +
-                MessageTable.Cols.ID + " integer primary key auto increment" +
+                MessageTable.Cols.ID + " integer primary key autoincrement," +
                 MessageTable.Cols.NAME + " varchar(20)," +
-                MessageTable.Cols.NUMBER + " varchar(20) not null," +
-                MessageTable.Cols.TIME + " varchar(30)" +
+                MessageTable.Cols.NUM + " varchar(20) not null," +
                 MessageTable.Cols.CONTENT + " varchar(100)," +
-                MessageTable.Cols.ICON + " integer +" +
-                MessageTable.Cols.ISSEND + " boolean);";
+                MessageTable.Cols.ISSEND + " integer not null);";
         db.execSQL(sql);
     }
 

@@ -8,4 +8,5 @@
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
     <string name="send">发送</string>
+    <string name="send_fail">send fail</string>
 </resources>

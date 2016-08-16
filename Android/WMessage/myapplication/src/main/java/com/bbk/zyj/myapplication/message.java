@@ -1,7 +1,8 @@
 package com.bbk.zyj.myapplication;
 
 /**
- * Created by Administrator on 2016/7/18.
+ * Created by Administrator on 2016/7/18
+ * Model
  */
 public class Message {
     //联系人姓名
@@ -12,8 +13,8 @@ public class Message {
     private String num;
     //头像
     private int icon;
-    //发送的消息true,收到的消息false
-    private boolean isSend;
+    //发送的消息1，收到的消息0
+    private int isSend;
 
     public int getIcon() {
         return icon;
@@ -47,11 +48,11 @@ public class Message {
         this.num = num;
     }
 
-    public boolean isSend() {
+    public int getSend() {
         return isSend;
     }
 
-    public void setSend(boolean send) {
+    public void setSend(int send) {
         isSend = send;
     }
 }

@@ -27,7 +27,6 @@ public class MessageSend extends Activity implements Serializable{
     private TextView mTextView;
     private ImageView ivNoMessage;
     private TextView tvNoMessage;
-
     private Button btnSendMessage;
     private ListView lvSendMessage;
 
