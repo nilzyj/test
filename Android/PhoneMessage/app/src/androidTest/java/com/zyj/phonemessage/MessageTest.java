@@ -1,14 +1,15 @@
 package com.zyj.phonemessage;
 
-import android.test.InstrumentationTestCase;
-
 import junit.framework.Assert;
+
+import org.junit.Test;
 
 /**
  * Created by Administrator on 2016/8/15.
  */
-public class MessageTest extends InstrumentationTestCase {
+public class MessageTest {
 
+    @Test
     public void testData() {
         Message message = new Message();
         message.setName("zyj");
