@@ -11,6 +11,8 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/18.
+ * Model
+ * 初始化数据类
  */
 public class MessageLab {
 
@@ -26,6 +28,11 @@ public class MessageLab {
         return sMessageLab;
     }
 
+    /**
+     * 构造函数，读取数据库中数据
+     * @param context 上下文
+     * @param db 数据库
+     */
     private MessageLab(Context context, SQLiteDatabase db) {
         mContext = context.getApplicationContext();
         //创建list用于保存Message对象
@@ -63,8 +70,6 @@ public class MessageLab {
     public List<Message> getMessages() {
         return  mMessages;
     }
-
-    //
 
     /**
      * 返回指定姓名的message

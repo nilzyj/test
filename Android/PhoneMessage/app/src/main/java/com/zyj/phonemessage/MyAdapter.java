@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/18.
+ * 消息列表Adapter
  */
 public class MyAdapter extends BaseAdapter {
     private List<Message> mMessages;

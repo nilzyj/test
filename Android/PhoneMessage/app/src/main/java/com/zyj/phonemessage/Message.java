@@ -1,7 +1,8 @@
 package com.zyj.phonemessage;
 
 /**
- * Created by Administrator on 2016/7/18.
+ * Created by Administrator on 2016/7/18
+ * Model
  */
 public class Message {
     //联系人姓名
@@ -12,7 +13,7 @@ public class Message {
     private String num;
     //头像
     private int icon;
-    //发送的消息1,收到的消息0
+    //发送的消息1，收到的消息0
     private int isSend;
 
     public int getIcon() {

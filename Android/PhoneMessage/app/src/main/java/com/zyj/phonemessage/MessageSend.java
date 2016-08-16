@@ -19,6 +19,9 @@ import java.util.List;
 
 import static com.zyj.phonemessage.database.MessageDbSchema.*;
 
+/**
+ * 消息会话类
+ */
 public class MessageSend extends Activity implements Serializable{
 
     private TextView mTextView;
@@ -81,7 +84,6 @@ public class MessageSend extends Activity implements Serializable{
             message.setIcon(R.drawable.icon);
             mList.add(message);
         }
-
         db.close();
 
         //显示对话

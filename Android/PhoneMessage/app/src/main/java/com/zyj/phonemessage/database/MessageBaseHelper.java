@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.zyj.phonemessage.Message;
 import com.zyj.phonemessage.database.MessageDbSchema.MessageTable;
 
 /**

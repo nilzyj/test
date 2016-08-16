@@ -15,6 +15,7 @@ import static com.zyj.phonemessage.database.MessageDbSchema.*;
 
 /**
  * Created by Administrator on 2016/7/26.
+ * 消息接收类
  */
 public class MessageReceiver extends BroadcastReceiver {
     @Override
@@ -42,10 +43,7 @@ public class MessageReceiver extends BroadcastReceiver {
         //发送通知
         MessageNotification notification = new MessageNotification();
         notification.sendNotification(context, num, content);
-
     }
-
-    //保存收到的信息
 
     /**
      * 保存接收到的短信

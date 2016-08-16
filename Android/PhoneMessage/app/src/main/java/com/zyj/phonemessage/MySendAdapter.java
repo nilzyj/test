@@ -14,6 +14,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/18.
+ * 消息会话Adapter
  */
 public class MySendAdapter extends BaseAdapter {
     private List<Message> mMessages = new ArrayList<>();

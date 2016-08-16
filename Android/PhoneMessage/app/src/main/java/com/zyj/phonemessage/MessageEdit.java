@@ -14,8 +14,11 @@ import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
 
-import static com.zyj.phonemessage.database.MessageDbSchema.*;
+import static com.zyj.phonemessage.database.MessageDbSchema.MessageTable;
 
+/**
+ * 编辑消息界面Activity
+ */
 public class MessageEdit extends Activity {
 
     private EditText et_send;
@@ -28,6 +31,13 @@ public class MessageEdit extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_edit);
 
+        sendMessage();
+    }
+
+    /**
+     * 发送消息
+     */
+    public void sendMessage() {
         final SmsManager smsManager = SmsManager.getDefault();
         Intent msgSent = new Intent("ACTION_MSG_SENT");
         Intent msgReceipt = new Intent("ACTION_MSG_RECEIPT");

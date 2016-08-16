@@ -8,6 +8,7 @@ import android.content.Intent;
 
 /**
  * Created by Administrator on 2016/8/5.
+ * 消息通知类
  */
 public class MessageNotification {
 

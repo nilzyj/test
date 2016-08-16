@@ -18,6 +18,9 @@ import java.util.List;
 
 import static com.zyj.phonemessage.database.MessageDbSchema.*;
 
+/**
+ * 消息列表界面Activity
+ */
 public class MessageActivity extends Activity implements Serializable {
 
     //绑定状态
@@ -66,7 +69,9 @@ public class MessageActivity extends Activity implements Serializable {
         });
     }
 
-
+    /**
+     *
+     */
     public void initView() {
         mTextView = (TextView) findViewById(R.id.text);
         mListView = (ListView) findViewById(R.id.listview);
