@@ -21,6 +21,12 @@ public class MessageLab {
     private List<Message> mMessages;
     private Context mContext;
 
+    /**
+     * 获得MessageLab实例
+     * @param context 上下文
+     * @param db 数据库
+     * @return MessageLab实例
+     */
     public static MessageLab get(Context context, SQLiteDatabase db) {
         if (sMessageLab == null) {
             sMessageLab = new MessageLab(context, db);
@@ -41,6 +47,7 @@ public class MessageLab {
         //初始化数据
         Cursor cursor = db.query("message", null, null, null, null, null, null);
         cursor.moveToFirst();
+        //每次从数据库中读取一条消息，查看消息列表中是否已存在相同联系人的消息，有则移除。
         while(cursor.moveToNext()){
             String name = cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NAME));
             String num = cursor.getString(cursor.getColumnIndex(MessageTable.Cols.NUM));
@@ -53,20 +60,24 @@ public class MessageLab {
             message.setContent(content);
             message.setIcon(R.drawable.icon);
             message.setSend(isSend);
-            if (name == null) {
-                noNameRepeatMessage(mMessages, num);
-            } else {
-                hasNameRepeatMessage(mMessages, name);
-            }
+            handleRepeatMessage(mMessages, num);
             mMessages.add(message);
         }
         db.close();
     }
 
-    public void addMessage(Message m) {
+    /**
+     * 添加Message对象
+     * @param m message
+     */
+    public void addMesgesa(Message m) {
         mMessages.add(m);
     }
 
+    /**
+     * 返回从数据库中获得的消息
+     * @return messages
+     */
     public List<Message> getMessages() {
         return  mMessages;
     }
@@ -85,17 +96,14 @@ public class MessageLab {
         return null;
     }
 
-    private void noNameRepeatMessage(List<Message> mMessages, String num) {
+    /**
+     * 获得每一个联系人的最新一条消息
+     * @param mMessages 所有的消息
+     * @param num 号码
+     */
+    private void handleRepeatMessage(List<Message> mMessages, String num) {
         for (int i = 0; i < mMessages.size(); i++) {
             if (mMessages.get(i).getNum().equals(num)) {
-                mMessages.remove(mMessages.get(i));
-            }
-        }
-    }
-
-    private void hasNameRepeatMessage(List<Message> mMessages, String name) {
-        for (int i = 0; i < mMessages.size(); i++) {
-            if (mMessages.get(i).getName().equals(name)) {
                 mMessages.remove(mMessages.get(i));
             }
         }

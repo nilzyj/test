@@ -12,16 +12,15 @@ import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.zyj.phonemessage.database.MessageDbSchema.*;
+import static com.zyj.phonemessage.database.MessageDbSchema.MessageTable;
 
 /**
- * 消息列表界面Activity
+ * 消息列表Activity
  */
-public class MessageActivity extends Activity implements Serializable {
+public class MessageActivity extends Activity {
 
     //绑定状态
     private static final boolean CONTECT_STATE = true;
@@ -70,7 +69,7 @@ public class MessageActivity extends Activity implements Serializable {
     }
 
     /**
-     *
+     * 初始化View
      */
     public void initView() {
         mTextView = (TextView) findViewById(R.id.text);
@@ -83,6 +82,7 @@ public class MessageActivity extends Activity implements Serializable {
     public void initData() {
         MessageBaseHelper database = new MessageBaseHelper(MessageActivity.this);
         final SQLiteDatabase db = database.getWritableDatabase();
+        //获得数据库中每个联系人的最新一条消息
         mMessages = MessageLab.get(MessageActivity.this, db).getMessages();
         db.close();
 

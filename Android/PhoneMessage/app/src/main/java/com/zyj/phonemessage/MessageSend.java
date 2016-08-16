@@ -6,23 +6,24 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zyj.phonemessage.database.MessageBaseHelper;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.zyj.phonemessage.database.MessageDbSchema.*;
+import static com.zyj.phonemessage.database.MessageDbSchema.MessageTable;
 
 /**
- * 消息会话类
+ * 消息会话Activity
  */
-public class MessageSend extends Activity implements Serializable{
+public class MessageSend extends Activity{
 
     private TextView mTextView;
     private ImageView ivNoMessage;
@@ -38,16 +39,19 @@ public class MessageSend extends Activity implements Serializable{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_send);
-        mTextView = (TextView) findViewById(R.id.text);
-        ivNoMessage = (ImageView) findViewById(R.id.iv_img_no_message);
-        ivNoMessage = (ImageView) findViewById(R.id.iv_img_no_message);
-        tvNoMessage = (TextView) findViewById(R.id.tv_no_message);
-        lvSendMessage = (ListView) findViewById(R.id.lv_send_message);
 
+        initView();
         initMessages();
 
-        btnSendMessage = (Button) findViewById(R.id.btn_send_message);
+        lvSendMessage.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                deleteMessage(mList, position);
+                return false;
+            }
+        });
 
+        //发送按钮监听
         btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +61,18 @@ public class MessageSend extends Activity implements Serializable{
                 startActivity(intentEdit);
             }
         });
+    }
+
+    /**
+     * 初始化View
+     */
+    private void initView() {
+        mTextView = (TextView) findViewById(R.id.text);
+        ivNoMessage = (ImageView) findViewById(R.id.iv_img_no_message);
+        ivNoMessage = (ImageView) findViewById(R.id.iv_img_no_message);
+        tvNoMessage = (TextView) findViewById(R.id.tv_no_message);
+        lvSendMessage = (ListView) findViewById(R.id.lv_send_message);
+        btnSendMessage = (Button) findViewById(R.id.btn_send_message);
     }
 
     /**
@@ -88,5 +104,19 @@ public class MessageSend extends Activity implements Serializable{
         //显示对话
         MySendAdapter adapter = new MySendAdapter(MessageSend.this, mList);
         lvSendMessage.setAdapter(adapter);
+    }
+
+
+    private void deleteMessage(List<Message> mList, int position) {
+        MessageBaseHelper database = new MessageBaseHelper(MessageSend.this);
+        final SQLiteDatabase db = database.getWritableDatabase();
+        Toast.makeText(MessageSend.this, "删除", Toast.LENGTH_SHORT).show();
+//        String num =
+//        db.query("message", null, num, )
+
+//        String whereClause = "id=?";//删除的条件
+//        String[] whereArgs = {"position"};//删除的条件参数
+//        db.delete("message",whereClause,whereArgs);//执行删除
+        db.close();
     }
 }

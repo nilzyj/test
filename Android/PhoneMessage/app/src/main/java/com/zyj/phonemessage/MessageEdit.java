@@ -17,7 +17,7 @@ import com.zyj.phonemessage.database.MessageBaseHelper;
 import static com.zyj.phonemessage.database.MessageDbSchema.MessageTable;
 
 /**
- * 编辑消息界面Activity
+ * 编辑消息Activity
  */
 public class MessageEdit extends Activity {
 
