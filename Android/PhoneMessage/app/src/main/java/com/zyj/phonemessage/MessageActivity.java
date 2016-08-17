@@ -58,7 +58,7 @@ public class MessageActivity extends Activity {
             }
         });
 
-        //listvie长按监听
+        //listview长按监听
         mListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {

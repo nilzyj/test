@@ -1,4 +1,4 @@
-package com.zyj.phonemessage.roundimageview;
+package com.zyj.phonemessage.roundedimageview;
 
 import android.support.annotation.IntDef;
 

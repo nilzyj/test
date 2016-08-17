@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.zyj.phonemessage.roundimageview.RoundedImageView;
+import com.zyj.phonemessage.roundedimageview.RoundedImageView;
 
 import java.util.List;
 

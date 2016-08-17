@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.zyj.phonemessage.roundimageview;
+package com.zyj.phonemessage.roundedimageview;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
