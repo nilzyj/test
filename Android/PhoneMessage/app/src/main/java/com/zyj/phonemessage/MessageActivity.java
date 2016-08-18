@@ -90,6 +90,9 @@ public class MessageActivity extends Activity {
         mListView.setAdapter(adapter);
     }
 
+    /**
+     * 更新ListView
+     */
     @Override
     protected void onResume() {
         super.onResume();
