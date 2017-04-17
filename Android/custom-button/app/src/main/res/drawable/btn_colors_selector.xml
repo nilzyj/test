@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--按下文字会变效果-字-->
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/shape2" />
+    <item android:state_pressed="true"
+          android:drawable="@drawable/shape2" />
     
     <item android:drawable="@drawable/shape" />
 </selector>
