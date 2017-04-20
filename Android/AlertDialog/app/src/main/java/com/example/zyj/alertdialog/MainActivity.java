@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDialog1() {
+//        选择对话框
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("确认对话框");
         builder.setIcon(R.mipmap.ic_launcher);
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDialog2() {
+//        单选对话框
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("title");
         builder.setIcon(R.mipmap.ic_launcher);
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDialog3() {
+//        多选对话框
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("title");
         builder.setIcon(R.mipmap.ic_launcher);
@@ -111,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDialog4() {
+//        列表对话框
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("title");
         builder.setIcon(R.mipmap.ic_launcher);
