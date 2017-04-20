@@ -39,13 +39,13 @@
         android:background="@drawable/shape"  
         /> 
     <Button
-        android:layout_marginTop="10dip"  
-        android:layout_width="wrap_content"  
+        android:layout_marginTop="10dip"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dip"  
-        android:text="圆角：按钮、文字都变化颜色" 
+        android:padding="10dip"
+        android:text="圆角：按钮、文字都变化颜色"
         android:textColor="@drawable/btn_color"  
-        android:background="@drawable/btn_colors_selector"  
+        android:background="@drawable/btn_colors_selector"
         /> 
     <Button
         android:layout_marginTop="10dip"  
