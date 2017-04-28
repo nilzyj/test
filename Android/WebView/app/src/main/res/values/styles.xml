@@ -1,11 +1,15 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#ce3d3a</item>
+        <item name="colorPrimaryDark">#ce3d3a</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
+    </style>
+    <!--<item name="android:windowTitleBackgroundStyle">@style/Titleground</item>-->
+    <!--<style name="Titleground">-->
+        <!--<item name="android:background">#ce3d3a</item>-->
+    <!--</style>-->
 </resources>
