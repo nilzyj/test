@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">WMessage</string>
-    <string name="send_message">发短信</string>
-    <string name="no_message">无消息记录</string>
-    <string name="contact">通讯录</string>
-    <string name="binding">请先绑定APP</string>
-</resources>
